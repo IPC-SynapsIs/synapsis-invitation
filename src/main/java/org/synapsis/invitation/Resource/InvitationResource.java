@@ -1,10 +1,10 @@
-package org.synapsis.invitation.Resource;
+package org.synapsis.invitation.resource;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
-import org.synapsis.invitation.Entity.Invitation;
-import org.synapsis.invitation.Service.IInvitationService;
+import org.synapsis.invitation.bean.Invitation;
+import org.synapsis.invitation.service.IInvitationService;
 
 import java.util.Collection;
 import java.util.UUID;

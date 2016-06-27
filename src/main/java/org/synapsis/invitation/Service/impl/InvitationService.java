@@ -1,10 +1,10 @@
-package org.synapsis.invitation.Service.impl;
+package org.synapsis.invitation.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import org.synapsis.invitation.Entity.Invitation;
-import org.synapsis.invitation.Repository.InvitationRepository;
-import org.synapsis.invitation.Service.IInvitationService;
+import org.synapsis.invitation.bean.Invitation;
+import org.synapsis.invitation.dao.InvitationRepository;
+import org.synapsis.invitation.service.IInvitationService;
 
 import java.util.Collection;
 import java.util.UUID;

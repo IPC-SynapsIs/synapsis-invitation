@@ -1,4 +1,4 @@
-package org.synapsis.invitation.Entity;
+package org.synapsis.invitation.bean;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

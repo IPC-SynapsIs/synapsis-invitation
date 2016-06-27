@@ -1,7 +1,7 @@
-package org.synapsis.invitation.Service;
+package org.synapsis.invitation.service;
 
 import org.springframework.stereotype.Component;
-import org.synapsis.invitation.Entity.Invitation;
+import org.synapsis.invitation.bean.Invitation;
 
 import java.util.Collection;
 import java.util.UUID;

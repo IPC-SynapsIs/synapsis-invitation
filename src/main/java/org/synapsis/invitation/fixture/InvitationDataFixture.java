@@ -1,10 +1,10 @@
-package org.synapsis.invitation.DataFixture;
+package org.synapsis.invitation.fixture;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
-import org.synapsis.invitation.Entity.Invitation;
-import org.synapsis.invitation.Repository.InvitationRepository;
+import org.synapsis.invitation.bean.Invitation;
+import org.synapsis.invitation.dao.InvitationRepository;
 
 import java.util.UUID;
 
