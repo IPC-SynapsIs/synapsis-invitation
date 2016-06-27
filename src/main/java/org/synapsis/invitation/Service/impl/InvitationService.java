@@ -18,27 +18,48 @@ public class InvitationService implements IInvitationService{
     @Autowired
     InvitationRepository invitationRepository;
 
-
+    /**
+     *
+     * @param id
+     * @return
+     */
     @Override
     public Invitation get(Long id) {
         return invitationRepository.findOne(id);
     }
 
+    /**
+     *
+     * @return
+     */
     @Override
     public Iterable<Invitation> getAll() {
         return invitationRepository.findAll();
     }
 
+    /**
+     *
+     * @param whoInvited
+     * @return
+     */
     @Override
     public Collection<Invitation> findByWhoInvited(UUID whoInvited) {
         return invitationRepository.findByWhoInvited(whoInvited);
     }
 
+    /**
+     *
+     * @param invitation
+     */
     @Override
     public void send(Invitation invitation) {
         invitationRepository.save(invitation);
     }
 
+    /**
+     *
+     * @param id
+     */
     @Override
     public void remove(Long id) {
         invitationRepository.delete(id);

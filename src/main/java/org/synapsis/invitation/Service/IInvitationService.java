@@ -12,9 +12,35 @@ import java.util.UUID;
 @Component
 public interface IInvitationService {
 
+    /**
+     *
+     * @param id
+     * @return
+     */
     Invitation get(Long id);
+
+    /**
+     *
+     * @return
+     */
     Iterable<Invitation> getAll();
+
+    /**
+     *
+     * @param whoInvited
+     * @return
+     */
     Collection<Invitation> findByWhoInvited(UUID whoInvited);
+
+    /**
+     *
+     * @param invitation
+     */
     void send(Invitation invitation);
+
+    /**
+     *
+     * @param id
+     */
     void remove(Long id);
 }
