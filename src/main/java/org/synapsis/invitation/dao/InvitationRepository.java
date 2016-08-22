@@ -10,8 +10,6 @@ import java.util.Collection;
 import java.util.UUID;
 
 @RepositoryRestResource
-public interface InvitationRepository extends JpaRepository<Invitation, Long> {
+public interface InvitationRepository{
 
-    @RestResource (path = "by-who-invited")
-    Collection<Invitation> findByWhoInvited(@Param("whoinvited") UUID whoInvited);
 }
